@@ -14,9 +14,12 @@
 </div>
 
 <div class="group">
-  <%= f. input :price %>
+  <%= f.input :price %>
 </div>
 
+<div class="group">
+  <%= f.input :image, as: :file%>
+</div>
 <%= f.submit "提交", date: {disable_with: "Submitting..."}%>
 
 <% end %>
