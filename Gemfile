@@ -33,16 +33,16 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
 gem 'font-awesome-rails'
-gem 'carrierwave'
+gem 'carrierwave'  #上傳檔案
 gem 'mini_magick'
-gem 'letter_opener', group: :development
-gem 'aasm'
+gem 'letter_opener', group: :development  #預覽寄信外掛
+gem 'aasm' #更改狀態
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   #gem 'byebug', platform: :mri
-  gem 'pry'
-  gem 'awesome_rails_console'
+  gem 'pry'  #除錯外掛 binding.pry  為斷點攔截呼叫
+  gem 'awesome_rails_console' #debug金手指介面
 end
 
 group :development do
