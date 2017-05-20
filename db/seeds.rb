@@ -11,3 +11,18 @@ u.password = "123456"          #最少要六碼
 u.password_confirmation = "123456"  #最少要六碼
 u.is_admin = true
 u.save
+
+
+#Initialize Product
+Product.create!(title: "QC-88", 
+                description: "小熊"，
+                price: 800,
+                quantity: 20,
+                image: open("http://img.kingstone.com.tw/cvlife/images/product/20050/2005050108650/2005050108650Abs1.JPG")
+                )
+Product.create!(title: "sony",
+                description: "藍芽音響"，
+                price: 2800,
+                quantity: 5,
+                image: open("https://www.moneydj.com/z/sjn/jpg/GetNewsRptjpg.djjpg?a=158693")
+                )
