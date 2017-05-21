@@ -23,35 +23,25 @@ class ImageUploader < CarrierWave::Uploader::Base
     process resize_to_fill: [400, 400]
   end
   # Provide a default URL as a default if there hasn't been a file uploaded:
-  # def default_url(*args)
-  #   # For Rails 3.1+ asset pipeline compatibility:
-  #   # ActionController::Base.helpers.asset_path("fallback/" + [version_name, "default.png"].compact.join('_'))
-  #
-  #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
-  # end
+  Product.create!(title: "QC-35",
+     description: "耳机",
+     price: 2800,
+     quantity: 5,
+     image: open("https://drive.google.com/file/d/0B6bccYkYyU2-dXJRSThJMi1sZUk/view?usp=sharing")
+     )
 
-  # Process files as they are uploaded:
-  # process scale: [200, 300]
-  #
-  # def scale(width, height)
-  #   # do something
-  # end
+   Product.create!(title: "Iphone7",
+     description: "手机",
+     price: 5000,
+     quantity: 5,
+     image: open("https://drive.google.com/file/d/0B6bccYkYyU2-ZGF0cjcyeFlUaXM/view?usp=sharing")
+     )
 
-  # Create different versions of your uploaded files:
-  # version :thumb do
-  #   process resize_to_fit: [50, 50]
-  # end
-
-  # Add a white list of extensions which are allowed to be uploaded.
-  # For images you might use something like this:
-  # def extension_whitelist
-  #   %w(jpg jpeg gif png)
-  # end
-
-  # Override the filename of the uploaded files:
-  # Avoid using model.id or version_name here, see uploader/store.rb for details.
-  # def filename
-  #   "something.jpg" if original_filename
-  # end
+   Product.create!(title: "Cherry Keyboard",
+     description: "G80-3000键盘",
+     price: 2800,
+     quantity: 5,
+     image: open("https://drive.google.com/file/d/0B6bccYkYyU2-bTU0eV9yeFpIZFU/view?usp=sharing")
+     )
 
 end
