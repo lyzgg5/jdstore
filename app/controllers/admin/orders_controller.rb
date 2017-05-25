@@ -28,7 +28,8 @@ class Admin::OrdersController < ApplicationController
   def cancel
     @order = Order.find(params[:id])
     @order.cancel_order!
-    OrderMailer.notify_cancel(@odrder).deliver! #取消後 ，系統寄出通知信
+    OrderMailer.notify_cancel(@order).deliver! #取消後 ，系統寄出通知信
+
     redirect_to :back
   end
   def return

@@ -49,6 +49,7 @@ class OrdersController < ApplicationController
     end
 
 
+    #    用户取消订单
     def apply_to_cancel
       @order = Order.find(params[:id])
       OrderMailer.apply_cancel(@order).deliver!
