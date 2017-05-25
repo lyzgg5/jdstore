@@ -24,16 +24,24 @@ u.save
    puts "Admin 已经建立过了，脚本跳过该步骤。"
  end
 
-#Initialize Product
-# Product.create!(title: "QC-88",
-#                 description: "小熊"，
-#                 quantity: 20,
-#                 price: 800,
-#                 image: open("http://img.kingstone.com.tw/cvlife/images/product/20050/2005050108650/2005050108650Abs1.JPG")
-#                 )
-# Product.create!(title: "sony",
-#                 description: "藍芽音響"，
-#                 quantity: 5,
-#                 price: 2800,
-#                 image: open("https://images-cn.ssl-images-amazon.com/images/I/41bVSMLUllL._AC_UL320_SR320,320_.jpg")
-#                 )
+ # Provide a default URL as a default if there hasn't been a file uploaded:
+ Product.create!(title: "QC-35",
+    description: "耳机",
+    price: 2800,
+    quantity: 5,
+    image: open("https://drive.google.com/file/d/0B6bccYkYyU2-dXJRSThJMi1sZUk/view?usp=sharing")
+    )
+
+  Product.create!(title: "Iphone7",
+    description: "手机",
+    price: 5000,
+    quantity: 5,
+    image: open("https://drive.google.com/file/d/0B6bccYkYyU2-ZGF0cjcyeFlUaXM/view?usp=sharing")
+    )
+
+  Product.create!(title: "Cherry Keyboard",
+    description: "G80-3000键盘",
+    price: 2800,
+    quantity: 5,
+    image: open("https://drive.google.com/file/d/0B6bccYkYyU2-bTU0eV9yeFpIZFU/view?usp=sharing")
+    )
